@@ -5,6 +5,10 @@ h1, h2, h3, h4, h5, h6, a, p, span{
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+.main__task-type{
+    padding-bottom: 1rem;
+    font-weight: 300;
+}
 .main__item-input{
     padding-bottom: 1rem;
 }
