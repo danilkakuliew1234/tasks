@@ -1,6 +1,22 @@
-document.querySelector('.main__select-rectangle').onclick = function(){
-    document.querySelector('.main__area-rectangle').classList.toggle('hide');
+Select('.main__area-rectangle', '.main__area-circle', 
+       '.main__select-rectangle', '.main__select-circle');
+Select();
+
+
+function Select(classone, classtwo, buttonone, buttontwo){
+    document.querySelector(buttonone).onclick = function(){
+        document.querySelector(classone).classList.toggle('hide');
+    }
+    document.querySelector(buttontwo).onclick = function(){
+        document.querySelector(classtwo).classList.toggle('hide');
+    }
 }
-document.querySelector('.main__select-circle').onclick = function(){
-    document.querySelector('.main__area-circle').classList.toggle('hide');
-}
+
+//buttons
+// .main__select-rectangle
+// .main__select-circle
+
+
+//Classes
+//.main__area-rectangle
+//.main__area-circle

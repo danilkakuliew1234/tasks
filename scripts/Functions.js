@@ -3,11 +3,17 @@ function CheckInput(inputa, inputb, inputc){
         inputa.classList.add("is-valid");
     else
         inputa.classList.remove('is-valid');
-    if(inputb.value != '')
-        inputb.classList.add("is-valid");
-    else
-        inputb.classList.remove('is-valid');
 
+    try
+    {
+        if(inputb.value != '')
+            inputb.classList.add("is-valid");
+        else
+            inputb.classList.remove('is-valid');
+    } catch
+    {
+        //no second input
+    }
     try
     {
         if(inputc.value != '')
@@ -16,6 +22,6 @@ function CheckInput(inputa, inputb, inputc){
             inputc.classList.remove('is-valid');
     } catch
     {
-        console.log('no three input');
+        //no three input
     }
 }
