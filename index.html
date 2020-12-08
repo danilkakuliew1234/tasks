@@ -29,7 +29,7 @@
                         <input type="number" placeholder="B" class="form-control main__input main__input-b" id="" required>
                     </div>
                     <div class="main__item-input">
-                        <input type="number" placeholder="C" class="form-control main__input is-valid main__input-c" id="" required>
+                        <input type="number" placeholder="C" class="form-control main__input main__input-c" id="" required>
                     </div>
                     <div class="main__item-input d-flex">
                         <input type="text" id="disabledTextInput" class="form-control main__item-input-solve-x1" placeholder="X1">
@@ -40,12 +40,41 @@
             </div>
             <div class="col-md-12">
                 <div class="main">
-                    
+                    <h1 class="main__task-type">Площади</h1>
+                    <div class="list-group select">
+                        <a class="list-group-item list-group-item-action main__select-rectangle">Прямоугольник</a>
+                        <a class="list-group-item list-group-item-action main__select-circle">Круг</a>
+                    </div>
+                    <div class="main__area-rectangle hide">
+                        <h1 class="main__task-type">Площадь прямоугольника</h1>
+                        <div class="main__item-input">
+                            <input type="number" placeholder="A" class="form-control main__input main__input-a-r" id="" required>
+                        </div>
+                        <div class="main__item-input">
+                            <input type="number" placeholder="B" class="form-control main__input main__input-b-r" id="" required>
+                        </div>
+                        <div class="main__item-input d-flex">
+                            <input type="text" id="disabledTextInput" class="form-control main__item-input-solve-r" placeholder="S">
+                        </div>
+                        <button type="button" class="btn btn-outline-primary main__button-solve-rectangle">Найти площадь прямоугольника</button>
+                    </div>
+                    <div class="main__area-circle hide">
+                        <h1 class="main__task-type">Площадь круга</h1>
+                        <div class="main__item-input">
+                            <input type="number" placeholder="A" class="form-control main__input main__input-a" id="" required>
+                        </div>
+                        <div class="main__item-input">
+                            <input type="number" placeholder="B" class="form-control main__input main__input-b" id="" required>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+<script src="scripts/AreaRectangle.js"></script>
+<script src="scripts/SelectCategory.js"></script>
 <script src="scripts/QuadraticEquation.js"></script>
+<script src="scripts/Functions.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>

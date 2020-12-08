@@ -5,26 +5,9 @@ main__inputb = document.querySelector('.main__input-b');
 main__inputc = document.querySelector('.main__input-c');
 
 setInterval(function(){
-    CheckInput();
+    CheckInput(main__inputa, main__inputb, main__inputc);
     SolveQuadratic();
 }, 200)
-
-function CheckInput(){
-    if(main__inputa.value != '')
-        main__inputa.classList.add("is-valid");
-    else
-        main__inputa.classList.remove('is-valid');
-
-    if(main__inputb.value != '')
-        main__inputb.classList.add("is-valid");
-    else
-        main__inputb.classList.remove('is-valid');
-
-    if(main__inputc.value != '')
-        main__inputc.classList.add("is-valid");
-    else
-        main__inputc.classList.remove('is-valid');
-}
 
 function SolveQuadratic(){
     document.querySelector('.main__button-solve').onclick = function(){
