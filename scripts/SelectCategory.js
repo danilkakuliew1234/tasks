@@ -1,7 +1,7 @@
 Select('.main__area-rectangle', '.main__area-circle', 
        '.main__select-rectangle', '.main__select-circle');
-Select();
-
+Select('.main__volume-parallelepiped', '.main__volume-sphere', 
+       '.main__select-parralelepiped-v', '.main__select-sphere-v');
 
 function Select(classone, classtwo, buttonone, buttontwo){
     document.querySelector(buttonone).onclick = function(){
@@ -11,12 +11,3 @@ function Select(classone, classtwo, buttonone, buttontwo){
         document.querySelector(classtwo).classList.toggle('hide');
     }
 }
-
-//buttons
-// .main__select-rectangle
-// .main__select-circle
-
-
-//Classes
-//.main__area-rectangle
-//.main__area-circle
