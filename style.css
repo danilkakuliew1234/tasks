@@ -18,3 +18,9 @@ h1, h2, h3, h4, h5, h6, a, p, span{
 .hide{
     display: none;
 }
+.footer{
+    padding-bottom: 2rem;
+}
+.button-select{
+    padding-bottom: 0.5rem;
+}

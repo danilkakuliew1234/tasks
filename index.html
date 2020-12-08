@@ -10,7 +10,8 @@
     <title>Tasks</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid main-container">
+        <div class="container">
         <div class="row header">
             <div class="col-md-12">
                 <header>
@@ -20,7 +21,7 @@
         </div>
         <div class="row container__footer-tasks">
             <div class="col-md-12">
-                <div class="main">
+                <div class="main container-task">
                     <h1 class="main__task-type">Квадратное уравнение</h1>
                     <div class="main__item-input">
                         <input type="number" placeholder="A" class="form-control main__input main__input-a" id="" required>
@@ -45,28 +46,36 @@
                         <a class="list-group-item list-group-item-action main__select-rectangle">Прямоугольник</a>
                         <a class="list-group-item list-group-item-action main__select-circle">Круг</a>
                     </div>
-                    <div class="main__area-rectangle hide">
-                        <h1 class="main__task-type">Площадь прямоугольника</h1>
-                        <div class="main__item-input">
-                            <input type="number" placeholder="A" class="form-control main__input main__input-a-r" id="" required>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <div class="main__area-rectangle hide">
+                                <h1 class="main__task-type">Площадь прямоугольника</h1>
+                                <div class="main__item-input">
+                                    <input type="number" placeholder="A" class="form-control main__input main__input-a-r" id="" required>
+                                </div>
+                                <div class="main__item-input">
+                                    <input type="number" placeholder="B" class="form-control main__input main__input-b-r" id="" required>
+                                </div>
+                                <div class="main__item-input d-flex">
+                                    <input type="text" id="disabledTextInput" class="form-control main__item-input-solve-r" placeholder="S">
+                                </div>
+                                <button type="button" class="btn btn-outline-primary main__button-solve-rectangle">Найти площадь прямоугольника</button>
+                            </div>
                         </div>
-                        <div class="main__item-input">
-                            <input type="number" placeholder="B" class="form-control main__input main__input-b-r" id="" required>
-                        </div>
-                        <div class="main__item-input d-flex">
-                            <input type="text" id="disabledTextInput" class="form-control main__item-input-solve-r" placeholder="S">
-                        </div>
-                        <button type="button" class="btn btn-outline-primary main__button-solve-rectangle">Найти площадь прямоугольника</button>
                     </div>
-                    <div class="main__area-circle hide">
-                        <h1 class="main__task-type">Площадь круга</h1>
-                        <div class="main__item-input">
-                            <input type="number" placeholder="Radius" class="form-control main__input main__input-a-c" id="" required>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <div class="main__area-circle hide">
+                                <h1 class="main__task-type">Площадь круга</h1>
+                                <div class="main__item-input">
+                                    <input type="number" placeholder="Radius" class="form-control main__input main__input-a-c" id="" required>
+                                </div>
+                                <div class="main__item-input d-flex">
+                                    <input type="text" id="disabledTextInput" class="form-control main__item-input-solve-c" placeholder="S">
+                                </div>
+                                <button type="button" class="btn btn-outline-primary main__button-solve-circle">Найти площадь круга</button>
+                            </div>  
                         </div>
-                        <div class="main__item-input d-flex">
-                            <input type="text" id="disabledTextInput" class="form-control main__item-input-solve-c" placeholder="S">
-                        </div>
-                        <button type="button" class="btn btn-outline-primary main__button-solve-circle">Найти площадь круга</button>
                     </div>
                 </div>
             </div>
@@ -77,42 +86,47 @@
                         <a class="list-group-item list-group-item-action main__select-parralelepiped-v">Объем парралелепипеда</a>
                         <a class="list-group-item list-group-item-action main__select-sphere-v">Объем шара</a>
                     </div>
-                    <div class="main__volume-parallelepiped hide">
-                        <h1 class="main__task-type">Объем парралелепипеда</h1>
-                        <div class="main__item-input">
-                            <input type="number" placeholder="A" class="form-control main__input main__input-a-v" id="" required>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <div class="main__volume-parallelepiped hide">
+                                <h1 class="main__task-type">Объем парралелепипеда</h1>
+                                <div class="main__item-input">
+                                    <input type="number" placeholder="A" class="form-control main__input main__input-a-v" id="" required>
+                                </div>
+                                <div class="main__item-input">
+                                    <input type="number" placeholder="B" class="form-control main__input main__input-b-v" id="" required>
+                                </div>
+                                <div class="main__item-input">
+                                    <input type="number" placeholder="C" class="form-control main__input main__input-c-v" id="" required>
+                                </div>
+                                <div class="main__item-input d-flex">
+                                    <input type="text" id="disabledTextInput" class="form-control main__item-input-solve-volume transparent" placeholder="volume">
+                                </div>
+                                <button type="button" class="btn btn-outline-primary main__button-solve-volume">Найти объем парралелепипеда</button>
+                            </div>
                         </div>
-                        <div class="main__item-input">
-                            <input type="number" placeholder="B" class="form-control main__input main__input-b-v" id="" required>
-                        </div>
-                        <div class="main__item-input">
-                            <input type="number" placeholder="C" class="form-control main__input main__input-c-v" id="" required>
-                        </div>
-                        <div class="main__item-input d-flex">
-                            <input type="text" id="disabledTextInput" class="form-control main__item-input-solve-volume" placeholder="volume">
-                        </div>
-                        <button type="button" class="btn btn-outline-primary main__button-solve-volume">Найти объем парралелепипеда</button>
                     </div>
-                    <div class="main__volume-sphere hide">
-                        <h1 class="main__task-type">Объем шара</h1>
-                        <div class="main__item-input">
-                            <input type="number" placeholder="A" class="form-control main__input main__input-a-v-s" id="" required>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <div class="main__volume-sphere hide">
+                                <h1 class="main__task-type">Объем шара</h1>
+                                <div class="main__item-input">
+                                    <input type="number" placeholder="R" class="form-control main__input main__input-a-v-s" id="" required>
+                                </div>
+                                <div class="main__item-input d-flex">
+                                    <input type="text" id="disabledTextInput" class="form-control main__item-input-solve-volume-s" placeholder="volume">
+                                </div>
+                                <button type="button" class="btn btn-outline-primary main__button-solve-volume-s">Найти объем шара</button>
+                            </div>  
                         </div>
-                        <div class="main__item-input">
-                            <input type="number" placeholder="B" class="form-control main__input main__input-b-v-s" id="" required>
-                        </div>
-                        <div class="main__item-input">
-                            <input type="number" placeholder="C" class="form-control main__input main__input-c-v-s" id="" required>
-                        </div>
-                        <div class="main__item-input d-flex">
-                            <input type="text" id="disabledTextInput" class="form-control main__item-input-solve-volume-s" placeholder="volume">
-                        </div>
-                        <button type="button" class="btn btn-outline-primary main__button-solve-volume-s">Найти объем шара</button>
                     </div>
+                    <footer class="footer"></footer>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+<script src="scripts/VolumeSphere.js"></script>
 <script src="scripts/VolumeParallelepiped.js"></script>
 <script src="scripts/AreaCircle.js"></script>
 <script src="scripts/AreaRectangle.js"></script>
